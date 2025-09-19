@@ -1,0 +1,95 @@
+# .NET 8 / ASP.NET Core standard .gitignore
+
+## Build results
+bin/
+obj/
+out/
+
+## User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Visual Studio working folder
+.vs/
+
+## ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+## Dotnet CLI
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+## NuGet
+*.nupkg
+*.snupkg
+*.nuspec
+*.psmdcp
+*.ps1
+*.ps1xml
+*.pssc
+*.psd1
+*.psm1
+*.ps1
+*.ps1xml
+*.pssc
+*.psd1
+*.psm1
+.nuget/
+packages/
+# Uncomment if you have tasks that create the 'packages' folder in the project root
+# /packages
+
+## Rider
+.idea/
+
+## VS Code
+.vscode/
+
+## Logs
+*.log
+
+## Others
+*.dbmdl
+*.jfm
+
+# Local test results
+TestResults/
+*.trx
+*.coverage
+*.coveragexml
+
+# NCrunch
+*.ncrunch*
+.*crunch*.local.xml
+
+# Resharper
+_ReSharper*/
+*.[Rr]e[Ss]harper
+
+# DotCover
+*.dotCover
+
+# Azure Pipelines
+.azure-pipelines/
+
+# SonarQube
+.sonar/
+
+# Backup & temp files
+*~
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# IIS Express
+.vsconfig
+/.vs/
+*.vspscc
+*.vssscc
+.DS_Store
+
+# End of .gitignore
