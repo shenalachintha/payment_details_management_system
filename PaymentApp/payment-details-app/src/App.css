@@ -1,38 +1,88 @@
+/* Custom styles for Payment Details App */
+body {
+  background-color: #f8f9fa;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.border-left-primary {
+  border-left: 4px solid #007bff !important;
 }
 
-@keyframes App-logo-spin {
+.card {
+  border: none;
+  border-radius: 10px;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1) !important;
+}
+
+.card-header {
+  border-radius: 10px 10px 0 0 !important;
+  border-bottom: 2px solid #e9ecef;
+}
+
+.form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.btn {
+  border-radius: 6px;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+.alert {
+  border-radius: 8px;
+  border: none;
+}
+
+.text-primary {
+  color: #007bff !important;
+}
+
+/* Animation for new cards */
+@keyframes fadeInUp {
   from {
-    transform: rotate(0deg);
+    opacity: 0;
+    transform: translateY(20px);
   }
   to {
-    transform: rotate(360deg);
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card-body {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+  
+  .card-body {
+    padding: 1rem;
+  }
+  
+  .btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .d-flex.gap-2 {
+    flex-direction: column;
   }
 }
